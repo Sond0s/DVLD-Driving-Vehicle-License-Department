@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\bin\Debug\DVLD.exe.config
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\bin\Debug\DVLD.exe
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\bin\Debug\DVLD.pdb
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\bin\Debug\BLL.dll
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\bin\Debug\Guna.UI2.dll
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\bin\Debug\BLL.pdb
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD-PL.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD.Properties.Resources.resources
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD-PL.csproj.GenerateResource.cache
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD-PL.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD-PL.csproj.Up2Date
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD.exe
+C:\Users\user\source\repos\WindowsForms\DVLD\DVLD-PL\obj\Debug\DVLD.pdb

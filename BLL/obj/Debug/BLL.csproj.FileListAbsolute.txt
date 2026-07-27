@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\WindowsForms\DVLD\BLL\bin\Debug\BLL.dll
+C:\Users\user\source\repos\WindowsForms\DVLD\BLL\bin\Debug\BLL.pdb
+C:\Users\user\source\repos\WindowsForms\DVLD\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\WindowsForms\DVLD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WindowsForms\DVLD\BLL\obj\Debug\BLL.dll
+C:\Users\user\source\repos\WindowsForms\DVLD\BLL\obj\Debug\BLL.pdb
