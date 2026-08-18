@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
@@ -52,23 +55,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAddUpdatePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUpdatePerson.Designer.cs">
+      <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeople.Designer.cs">
+      <DependentUpon>frmPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowDetails.Designer.cs">
+      <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <Compile Include="UserControls\ctrlShowDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlShowDetails.Designer.cs">
+      <DependentUpon>ctrlShowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlAdd-Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlAdd-Edit.Designer.cs">
+      <DependentUpon>ctrlAdd-Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateProvider.cs" />
+    <EmbeddedResource Include="frmAddUpdatePerson.resx">
+      <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeople.resx">
+      <DependentUpon>frmPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowDetails.resx">
+      <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources5.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ctrlShowDetails.resx">
+      <DependentUpon>ctrlShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ctrlAdd-Edit.resx">
+      <DependentUpon>ctrlAdd-Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,13 +145,55 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControls\" />
+    <None Include="Imgs\icons8-add-user-48.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{cdca729c-fa15-4c1e-afc4-ec7cfffd1c47}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-application-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-application-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\application2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-add-user-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-man-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-man-150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-man-250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-details-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-edit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-email-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-phone-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgs\icons8-user-groups-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

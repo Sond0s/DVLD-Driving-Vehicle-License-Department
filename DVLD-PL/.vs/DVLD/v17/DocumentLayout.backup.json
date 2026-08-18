@@ -3,11 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|c:\\users\\user\\source\\repos\\windowsforms\\dvld\\dvld-pl\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|c:\\users\\user\\source\\repos\\windowsforms\\dvld\\dvld-pl\\frmshowdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|solutionrelative:frmshowdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDCA729C-FA15-4C1E-AFC4-EC7CFFFD1C47}|..\\BLL\\BLL.csproj|c:\\users\\user\\source\\repos\\windowsforms\\dvld\\bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\usercontrols\\ctrlshowdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|solutionrelative:usercontrols\\ctrlshowdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|c:\\users\\user\\source\\repos\\windowsforms\\dvld\\dvld-pl\\usercontrols\\ctrlshowdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|solutionrelative:usercontrols\\ctrlshowdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|c:\\users\\user\\source\\repos\\windowsforms\\dvld\\dvld-pl\\usercontrols\\ctrladd-edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|solutionrelative:usercontrols\\ctrladd-edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\usercontrols\\ctrladd-edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8123A8-F280-4823-B186-A58DEF0A9025}|DVLD-PL.csproj|solutionrelative:usercontrols\\ctrladd-edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,26 +47,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\frmLogin.cs",
-              "RelativeDocumentMoniker": "frmLogin.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\frmLogin.cs [Design]",
-              "RelativeToolTip": "frmLogin.cs [Design]",
+              "Title": "frmShowDetails.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\frmShowDetails.cs",
+              "RelativeDocumentMoniker": "frmShowDetails.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\frmShowDetails.cs",
+              "RelativeToolTip": "frmShowDetails.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T17:11:31.309Z",
+              "WhenOpened": "2026-08-18T17:15:34.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ctrlShowDetails.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlShowDetails.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlShowDetails.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlShowDetails.cs [Design]*",
+              "RelativeToolTip": "UserControls\\ctrlShowDetails.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T16:48:03.871Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ctrlAdd-Edit.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlAdd-Edit.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlAdd-Edit.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlAdd-Edit.cs",
+              "RelativeToolTip": "UserControls\\ctrlAdd-Edit.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T12:24:41.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ctrlAdd-Edit.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlAdd-Edit.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlAdd-Edit.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlAdd-Edit.cs [Design]",
+              "RelativeToolTip": "UserControls\\ctrlAdd-Edit.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T15:08:24.415Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\BLL\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\Class1.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\BLL\\Class1.cs",
-              "RelativeToolTip": "..\\BLL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Title": "ctrlShowDetails.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlShowDetails.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlShowDetails.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WindowsForms\\DVLD\\DVLD-PL\\UserControls\\ctrlShowDetails.cs*",
+              "RelativeToolTip": "UserControls\\ctrlShowDetails.cs*",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAC8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T17:09:22.465Z",
+              "WhenOpened": "2026-08-18T14:47:11.255Z",
               "EditorCaption": ""
             }
           ]
