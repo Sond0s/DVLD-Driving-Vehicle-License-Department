@@ -119,6 +119,31 @@ namespace BLL
         
         }
 
+
+        //Find Person By NationalNo.
+        public static PeopleBLL FindPersonByNationalNo(string NationalNo)
+        {
+            int ID = 0;
+            string FirstName = "", SecondName = "", ThirdName = "",
+                LastName = "", Address = "", Phone = "", Email = "", ImagePath = "";
+            int Gender = 0, NationalityCountryID = 0;
+            DateTime Date = DateTime.Now;
+
+            if(PeopleDAL.FindPersonByNationalNo(NationalNo, ref ID, ref FirstName, ref SecondName, ref ThirdName, ref LastName, ref Date,
+                ref Gender, ref Address, ref Phone, ref Email, ref NationalityCountryID, ref ImagePath ))
+                { 
+                return new PeopleBLL(ID, NationalNo, FirstName, SecondName, ThirdName,
+                    LastName, Date, Gender, Address, Phone, Email, NationalityCountryID, ImagePath);
+            }
+            else
+            {
+                               return null;
+            }
+
+
+        }
+
+
         //fetch people details into datatable
         public static DataTable ListAllPeople()
         {

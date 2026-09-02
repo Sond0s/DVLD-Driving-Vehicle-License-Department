@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,10 @@ namespace DVLD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDashboard());
+            //UsersBLL currentUser = new UsersBLL();
+            //Application.Run(new frmDashboard(currentUser));
+            Application.Run(new frmLogin());
+
         }
     }
 }

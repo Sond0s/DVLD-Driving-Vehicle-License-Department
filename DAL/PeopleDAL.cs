@@ -54,6 +54,9 @@ namespace DAL
         //New filteration method using SQL mapping instead of using the previous method (FilterOptions)
         public static DataTable PeopleFilter(string SelectedOption, string SearchText)
         {
+            SelectedOption = SelectedOption.Trim();
+            SearchText = SearchText.Trim();
+
             DataTable dt = new DataTable();
             SqlConnection conn = new SqlConnection(Connection.connectionString);
 
@@ -321,6 +324,53 @@ namespace DAL
             return Found;
         }
 
+        //find by NationalNo
+        public static bool FindPersonByNationalNo(string NationalNo, ref int ID, ref string FirstName, ref string SecondName,
+          ref string ThirdName, ref string LastName, ref DateTime DateOfBirth, ref int Gender, ref string Address ,
+           ref string Phone, ref string Email, ref int NationalityCountryID, ref string ImagePath)
+        {
+            bool Found = false;
+            SqlConnection conn = new SqlConnection(Connection.connectionString);
+            string query = @"Select * from People Where NationalNo = @NationalNo";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@NationalNo", NationalNo);
+
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    Found = true;
+                    ID = (int)reader["PersonID"];
+                    FirstName = (string)reader["FirstName"];
+                    SecondName = (string)reader["SecondName"];
+                    ThirdName = (string)reader["ThirdName"];
+                    LastName = (string)reader["LastName"];
+                    DateOfBirth = (DateTime)reader["DateOfBirth"];
+                    Gender = Convert.ToInt32(reader["Gendor"]);
+                    Address = (string)reader["Address"];
+                    Phone = (string)reader["Phone"];
+                    Email = reader["Email"] == DBNull.Value ? "NULL" : (string)reader["Email"];
+                    NationalityCountryID = (int)reader["NationalityCountryID"];
+                    ImagePath = reader["ImagePath"] == DBNull.Value ? null : (string)reader["ImagePath"];
+
+                }
+                reader.Close();
+
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return Found;
+
+        }
 
         //update person 
         public static bool UpdatePerson(int ID, string NationalNo, string FirstName, string SecondName,

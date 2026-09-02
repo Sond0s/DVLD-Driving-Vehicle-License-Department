@@ -19,6 +19,8 @@ namespace DVLD.UserControls
 {
     public partial class frmAdd_Edit : UserControl
     {
+        public event Action<int> passID;
+
         private enum enMode {Add, Update };
 
         private enMode _Mode;
@@ -31,6 +33,7 @@ namespace DVLD.UserControls
             InitializeComponent();
     
         }
+
 
         //passing the ID and changing mode throughout a method (not the constructor).
         public void LoadFormMode(int ID)
@@ -115,14 +118,22 @@ namespace DVLD.UserControls
 
         private void _UpdatePersonImage()
         {
-            if (rbMale.Checked)
+            if(pbImage.ImageLocation != null)
             {
-                pbImage.Image = Resources.icons8_man_250;
+                return;
             }
             else
             {
-                pbImage.Image = Resources.icons8_woman_250;
+                if (rbMale.Checked)
+                {
+                    pbImage.Image = Resources.icons8_man_250;
+                }
+                else
+                {
+                    pbImage.Image = Resources.icons8_woman_250;
+                }
             }
+         
         }
 
         private void _RefreshItems()
@@ -228,6 +239,9 @@ namespace DVLD.UserControls
                 if (Person.Save())
                 {
                     MessageBox.Show("New Person Added successfully.");
+                    //use delegation.
+                    AddPersonComplete(Person.ID);
+
                 }
                 else
                 {
@@ -260,6 +274,7 @@ namespace DVLD.UserControls
                     if (Person.Save())
                     {
                         MessageBox.Show("Person Updated successfully.");
+ 
                     }
                     else
                     {
@@ -268,6 +283,11 @@ namespace DVLD.UserControls
                 }
                 
             }
+        }
+
+        protected void AddPersonComplete(int personID)
+        {
+            passID?.Invoke(personID);
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -358,5 +378,7 @@ namespace DVLD.UserControls
                 epAddPerson.SetError(tbEmail, "Invalid mail format.");
             }
         }
+
+ 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DVLD.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,22 @@ namespace DVLD
 {
     public partial class frmAddUpdatePerson : Form
     {
+
+        public event Action<int> passID;
         public frmAddUpdatePerson(int ID)
         {
             InitializeComponent();
             frmAdd_Edit1.LoadFormMode(ID);
 
+            frmAdd_Edit1.passID += CtrlAddUpdatePerson1_passID;
+          
+
         }
+
+        private void CtrlAddUpdatePerson1_passID(int personID)
+        {
+            passID?.Invoke(personID);
+        }
+
     }
 }

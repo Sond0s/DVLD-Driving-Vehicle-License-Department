@@ -61,6 +61,18 @@
     <Compile Include="frmAddUpdatePerson.Designer.cs">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,33 +97,79 @@
     <Compile Include="frmShowDetails.Designer.cs">
       <DependentUpon>frmShowDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmShowUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowUserDetails.Designer.cs">
+      <DependentUpon>frmShowUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserControls\ctrlAdd-Edit-User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlAdd-Edit-User.Designer.cs">
+      <DependentUpon>ctrlAdd-Edit-User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlFilterPersons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlFilterPersons.Designer.cs">
+      <DependentUpon>ctrlFilterPersons.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ctrlShowDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ctrlShowDetails.Designer.cs">
       <DependentUpon>ctrlShowDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ctrlAdd-Edit.cs">
+    <Compile Include="UserControls\ctrlAdd-Edit-Person.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ctrlAdd-Edit.Designer.cs">
-      <DependentUpon>ctrlAdd-Edit.cs</DependentUpon>
+    <Compile Include="UserControls\ctrlAdd-Edit-Person.Designer.cs">
+      <DependentUpon>ctrlAdd-Edit-Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlUserInfo.Designer.cs">
+      <DependentUpon>ctrlUserInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="ValidateProvider.cs" />
     <EmbeddedResource Include="frmAddUpdatePerson.resx">
       <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPeople.resx">
       <DependentUpon>frmPeople.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowDetails.resx">
       <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowUserDetails.resx">
+      <DependentUpon>frmShowUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,11 +181,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ctrlAdd-Edit-User.resx">
+      <DependentUpon>ctrlAdd-Edit-User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ctrlFilterPersons.resx">
+      <DependentUpon>ctrlFilterPersons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ctrlShowDetails.resx">
       <DependentUpon>ctrlShowDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ctrlAdd-Edit.resx">
-      <DependentUpon>ctrlAdd-Edit.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ctrlAdd-Edit-Person.resx">
+      <DependentUpon>ctrlAdd-Edit-Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ctrlUserInfo.resx">
+      <DependentUpon>ctrlUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
@@ -152,18 +219,6 @@
       <Project>{cdca729c-fa15-4c1e-afc4-ec7cfffd1c47}</Project>
       <Name>BLL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Imgs\icons8-application-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Imgs\icons8-application-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Imgs\application.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Imgs\application2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Imgs\icons8-add-user-96.png" />

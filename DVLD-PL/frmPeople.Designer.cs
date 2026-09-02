@@ -102,7 +102,7 @@
             // 
             // cmsOptions
             // 
-            this.cmsOptions.Font = new System.Drawing.Font("Cairo Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsOptions.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsOptions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmShowDetails,
@@ -122,14 +122,14 @@
             this.cmsOptions.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsOptions.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsOptions.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsOptions.Size = new System.Drawing.Size(215, 270);
+            this.cmsOptions.Size = new System.Drawing.Size(215, 228);
             this.cmsOptions.Text = "Options";
             // 
             // tsmShowDetails
             // 
             this.tsmShowDetails.Image = ((System.Drawing.Image)(resources.GetObject("tsmShowDetails.Image")));
             this.tsmShowDetails.Name = "tsmShowDetails";
-            this.tsmShowDetails.Size = new System.Drawing.Size(214, 34);
+            this.tsmShowDetails.Size = new System.Drawing.Size(214, 28);
             this.tsmShowDetails.Text = "Show Details";
             this.tsmShowDetails.Click += new System.EventHandler(this.tsmShowDetails_Click);
             // 
@@ -137,7 +137,7 @@
             // 
             this.tsmAddPerson.Image = ((System.Drawing.Image)(resources.GetObject("tsmAddPerson.Image")));
             this.tsmAddPerson.Name = "tsmAddPerson";
-            this.tsmAddPerson.Size = new System.Drawing.Size(214, 34);
+            this.tsmAddPerson.Size = new System.Drawing.Size(214, 28);
             this.tsmAddPerson.Text = "Add New Person";
             this.tsmAddPerson.Click += new System.EventHandler(this.tsmAddPerson_Click);
             // 
@@ -145,7 +145,7 @@
             // 
             this.tsmEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsmEdit.Image")));
             this.tsmEdit.Name = "tsmEdit";
-            this.tsmEdit.Size = new System.Drawing.Size(214, 34);
+            this.tsmEdit.Size = new System.Drawing.Size(214, 28);
             this.tsmEdit.Text = "Edit";
             this.tsmEdit.Click += new System.EventHandler(this.tsmEdit_Click);
             // 
@@ -153,7 +153,7 @@
             // 
             this.tsmDelete.Image = ((System.Drawing.Image)(resources.GetObject("tsmDelete.Image")));
             this.tsmDelete.Name = "tsmDelete";
-            this.tsmDelete.Size = new System.Drawing.Size(214, 34);
+            this.tsmDelete.Size = new System.Drawing.Size(214, 28);
             this.tsmDelete.Text = "Delete";
             this.tsmDelete.Click += new System.EventHandler(this.tsmDelete_Click);
             // 
@@ -161,7 +161,7 @@
             // 
             this.tsmSendEmail.Image = ((System.Drawing.Image)(resources.GetObject("tsmSendEmail.Image")));
             this.tsmSendEmail.Name = "tsmSendEmail";
-            this.tsmSendEmail.Size = new System.Drawing.Size(214, 34);
+            this.tsmSendEmail.Size = new System.Drawing.Size(214, 28);
             this.tsmSendEmail.Text = "Send Email";
             this.tsmSendEmail.Click += new System.EventHandler(this.tsmSendEmail_Click);
             // 
@@ -169,14 +169,14 @@
             // 
             this.tsmPhoneCall.Image = ((System.Drawing.Image)(resources.GetObject("tsmPhoneCall.Image")));
             this.tsmPhoneCall.Name = "tsmPhoneCall";
-            this.tsmPhoneCall.Size = new System.Drawing.Size(214, 34);
+            this.tsmPhoneCall.Size = new System.Drawing.Size(214, 28);
             this.tsmPhoneCall.Text = "Phone Call";
             this.tsmPhoneCall.Click += new System.EventHandler(this.tsmPhoneCall_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(214, 34);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(214, 28);
             this.toolStripMenuItem2.Text = " ";
             // 
             // cbFilterPeople

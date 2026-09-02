@@ -18,7 +18,7 @@ namespace DVLD
         public frmShowDetails(int PersonID )
         {
             InitializeComponent();
-            ctrlShowDetails1.LoadPersonDetails(PersonID);
+            ctrlShowDetails1.LoadPersonByID(PersonID);
 
         }
 
